@@ -1,0 +1,25 @@
+{
+  "ciudades": [
+    {
+      "id":1,
+      "departamento":"San Carlos de Bariloche",
+      "pais":"Argentina"
+    },
+    {
+      "id":2,
+      "departamento":"Buenos Aires",
+      "pais":"Argentina"
+    },
+    {
+      "id":3,
+      "departamento":"Mendoza",
+      "pais":"Argentina"
+    },
+    {
+      "id":4,
+      "departamento":"Cordoba",
+      "pais":"Argentina"
+    }
+  ]
+  
+}

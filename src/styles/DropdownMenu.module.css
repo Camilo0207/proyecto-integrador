@@ -1,0 +1,59 @@
+
+
+.head_menu{
+    background: var(--main-color);
+    height: 25%;
+    padding: 12px 10px 10px 14px;
+}
+
+
+.head_menu .icon_close{
+    height: 30%;
+}
+
+.head_menu .icon_close p{
+    cursor: pointer;
+}
+
+.head_menu .user_info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 70%;
+}
+
+.head_menu .user_info .initials_name{
+    background: var(--fourth-color);
+    padding: 5px;
+    border-radius: 50%;
+    margin-bottom: 9px;
+}
+
+.main_menu{
+    height: 65%;
+    background: var(--fourth-color);
+    padding: 31px 19px 10px 19px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.footer_menu{
+    height: 10%;
+    background: var(--fourth-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+.footer_menu img{
+    margin-left: 18px;
+}
+
+
+

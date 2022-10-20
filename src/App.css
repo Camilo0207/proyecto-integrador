@@ -1,0 +1,24 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #1dbeb4;
+  --second-color: #383b58;
+  --third-color: #545776;
+  --fourth-color: #f3f1ed;
+
+  /* --main-color:#F0572D;
+    --second-color:#31363F;
+    --third-color:#191B1D;
+    --fourth-color:#DFE4EA; */
+
+  /* --main-color:#FBC02D;
+    --second-color:#263238;
+    --third-color:#607D8B;
+    --fourth-color:#FFFBE2; */
+}
+
