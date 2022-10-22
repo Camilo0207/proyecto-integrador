@@ -8,6 +8,16 @@
     position: relative;
 }
 
+.container a:hover{
+    text-decoration: none;
+}
+.container a:focus{
+    text-decoration: none;
+}
+.container a{
+    text-decoration: none;
+}
+
 .principal_logo{
     display: flex;
     align-items: center;
