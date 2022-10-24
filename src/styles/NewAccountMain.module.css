@@ -4,3 +4,36 @@
     align-items: center;
     justify-content: center;
 }
+
+.container .newAccount_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    width: 80%;
+    /* background: #000; */
+}
+
+.container .newAccount_box h1{
+    color: var(--main-color);
+    font-size: 24px;
+    /* margin-bottom: 47px; */
+}
+
+
+
+
+@media(min-width:481px){
+    .container .newAccount_box{
+    width: 50%;
+    }
+    /* .container .login_box h1{
+    font-size: 28px;
+    } */
+}
+
+@media(min-width:769px) {
+    .container .newAccount_box{
+        width: 35%;
+    }
+}

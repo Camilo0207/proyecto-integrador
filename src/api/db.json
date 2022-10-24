@@ -1,4 +1,13 @@
 {
+
+  "usersCreated":[
+    {
+      "email":"camilosa0207@hotmail.com",
+      "password":"1234"
+    }
+  ],
+
+
   "ciudades": [
       {
         "id":1,
@@ -26,7 +35,7 @@
       {
         "id":1,
         "name":"Hoteles",
-        "imgUrl":"https://i.imgur.com/B9Kuf6S.png",
+        "url_image":"https://i.imgur.com/B9Kuf6S.png",
         "results":[
             {
               "id":1,
