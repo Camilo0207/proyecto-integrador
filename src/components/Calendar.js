@@ -21,7 +21,7 @@ export default function Calendar({form,setForm}) {
         })
       }
     }
-    // console.log(asdsadasdas);
+
     return (
     <div>
         <DateRangePicker 
