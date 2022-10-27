@@ -1,192 +1,192 @@
 {
-
-  "usersCreated":[
+  "usersCreated": [
     {
-      "email":"camilosa0207@hotmail.com",
-      "password":"123"
+      "name": "camilo",
+      "lastname": "sanchez",
+      "email": "camilo@hotmail.com",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "id": 1666799043873
     }
   ],
-
-
   "ciudades": [
-      {
-        "id":1,
-        "departamento":"San Carlos de Bariloche",
-        "pais":"Argentina"
-      },
-      {
-        "id":2,
-        "departamento":"Buenos Aires",
-        "pais":"Argentina"
-      },
-      {
-        "id":3,
-        "departamento":"Mendoza",
-        "pais":"Argentina"
-      },
-      {
-        "id":4,
-        "departamento":"Cordoba",
-        "pais":"Argentina"
-      }
+    {
+      "id": 1,
+      "departamento": "San Carlos de Bariloche",
+      "pais": "Argentina"
+    },
+    {
+      "id": 2,
+      "departamento": "Buenos Aires",
+      "pais": "Argentina"
+    },
+    {
+      "id": 3,
+      "departamento": "Mendoza",
+      "pais": "Argentina"
+    },
+    {
+      "id": 4,
+      "departamento": "Cordoba",
+      "pais": "Argentina"
+    }
   ],
-
-  "categorias":[
-      {
-        "id":1,
-        "name":"Hoteles",
-        "url_image":"https://i.imgur.com/B9Kuf6S.png",
-        "results":[
-            {
-              "id":1,
-                "nombre":"Hotel 1",
-                "numeroEstrella":4,
-                "descripción":"Este es el hotel 1",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg1"
-            },
-            {
-                "id":2,
-                "nombre":"Hotel 2",
-                "numeroEstrella":4,
-                "descripción":"Este es el hotel 2",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg2"
-            },
-            {
-                "id":3,
-                "nombre":"Hotel 3",
-                "numeroEstrella":4,
-                "descripción":"Este es el hotel 3",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg3"
-            },
-            {
-                "id":4,
-                "nombre":"Hotel 4",
-                "numeroEstrella":4,
-                "descripción":"Este es el hotel 4",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg4"
-            }
-        ]
+  "categorias": [
+    {
+      "id": 1,
+      "name": "Hoteles",
+      "imgUrl": "https://i.imgur.com/B9Kuf6S.png",
+      "results": [
+        {
+          "id": 1,
+          "nombre": "Hotel 1",
+          "numeroEstrella": 4,
+          "descripción": "Este es el hotel 1",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg1"
+        },
+        {
+          "id": 2,
+          "nombre": "Hotel 2",
+          "numeroEstrella": 4,
+          "descripción": "Este es el hotel 2",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg2"
+        },
+        {
+          "id": 3,
+          "nombre": "Hotel 3",
+          "numeroEstrella": 4,
+          "descripción": "Este es el hotel 3",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg3"
+        },
+        {
+          "id": 4,
+          "nombre": "Hotel 4",
+          "numeroEstrella": 4,
+          "descripción": "Este es el hotel 4",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg4"
+        }
+      ]
     },
-      {
-        "id":2,
-        "name":"Hostels",
-        "imgUrl":"https://i.imgur.com/MTIcDLV.png",
-        "results":[
-            {
-              "id":1,
-                "nombre":"Hostels 1",
-                "numeroEstrella":4,
-                "descripción":"Este es elhostel 1",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg1"
-            },
-            {
-                "id":2,
-                "nombre":"Hostels 2",
-                "numeroEstrella":4,
-                "descripción":"Este es el hostel 2",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg2"
-            },
-            {
-                "id":3,
-                "nombre":"Hostels 3",
-                "numeroEstrella":4,
-                "descripción":"Este es el hostel 3",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg3"
-            },
-            {
-                "id":4,
-                "nombre":"Hostels 4",
-                "numeroEstrella":4,
-                "descripción":"Este es el hostel 4",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg4"
-            }
-        ]
+    {
+      "id": 2,
+      "name": "Hostels",
+      "imgUrl": "https://i.imgur.com/MTIcDLV.png",
+      "results": [
+        {
+          "id": 1,
+          "nombre": "Hostels 1",
+          "numeroEstrella": 4,
+          "descripción": "Este es elhostel 1",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg1"
+        },
+        {
+          "id": 2,
+          "nombre": "Hostels 2",
+          "numeroEstrella": 4,
+          "descripción": "Este es el hostel 2",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg2"
+        },
+        {
+          "id": 3,
+          "nombre": "Hostels 3",
+          "numeroEstrella": 4,
+          "descripción": "Este es el hostel 3",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg3"
+        },
+        {
+          "id": 4,
+          "nombre": "Hostels 4",
+          "numeroEstrella": 4,
+          "descripción": "Este es el hostel 4",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg4"
+        }
+      ]
     },
-      {
-        "id":3,
-        "name":"Departamentos",
-        "imgUrl":"https://i.imgur.com/I71nvpQ.png",
-        "results":[
-            {
-              "id":1,
-                "nombre":"Departamento 1",
-                "numeroEstrella":4,
-                "descripción":"Este es el departamento 1",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg1"
-            },
-            {
-                "id":2,
-                "nombre":"Departamento 2",
-                "numeroEstrella":4,
-                "descripción":"Este es el departamento 2",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg2"
-            },
-            {
-                "id":3,
-                "nombre":"Departamento 3",
-                "numeroEstrella":4,
-                "descripción":"Este es el departamento 3",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg3"
-            },
-            {
-                "id":4,
-                "nombre":"Departamento 4",
-                "numeroEstrella":4,
-                "descripción":"Este es el departamento 4",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg4"
-            }
-        ]
+    {
+      "id": 3,
+      "name": "Departamentos",
+      "imgUrl": "https://i.imgur.com/I71nvpQ.png",
+      "results": [
+        {
+          "id": 1,
+          "nombre": "Departamento 1",
+          "numeroEstrella": 4,
+          "descripción": "Este es el departamento 1",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg1"
+        },
+        {
+          "id": 2,
+          "nombre": "Departamento 2",
+          "numeroEstrella": 4,
+          "descripción": "Este es el departamento 2",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg2"
+        },
+        {
+          "id": 3,
+          "nombre": "Departamento 3",
+          "numeroEstrella": 4,
+          "descripción": "Este es el departamento 3",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg3"
+        },
+        {
+          "id": 4,
+          "nombre": "Departamento 4",
+          "numeroEstrella": 4,
+          "descripción": "Este es el departamento 4",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg4"
+        }
+      ]
     },
-      {
-        "id":4,
-        "name":"Bed and breakfast",
-        "imgUrl":"https://i.imgur.com/SioaSGq.png",
-        "results":[
-            {
-              "id":1,
-                "nombre":"Bed and breakfast 1",
-                "numeroEstrella":4,
-                "descripción":"Este es el Bed and breakfast 1",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg1"
-            },
-            {
-                "id":2,
-                "nombre":"Bed and breakfast 2",
-                "numeroEstrella":4,
-                "descripción":"Este es el hotel 2",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg2"
-            },
-            {
-                "id":3,
-                "nombre":"Bed and breakfast 3",
-                "numeroEstrella":4,
-                "descripción":"Este es el hotel 3",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg3"
-            },
-            {
-                "id":4,
-                "nombre":"Bed and breakfast 4",
-                "numeroEstrella":4,
-                "descripción":"Este es el hotel 4",
-                "ubicación":"lat 11111 longitud 1111",
-                "imgUrl":"urlimg4"
-            }
-        ]
+    {
+      "id": 4,
+      "name": "Bed and breakfast",
+      "imgUrl": "https://i.imgur.com/SioaSGq.png",
+      "results": [
+        {
+          "id": 1,
+          "nombre": "Bed and breakfast 1",
+          "numeroEstrella": 4,
+          "descripción": "Este es el Bed and breakfast 1",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg1"
+        },
+        {
+          "id": 2,
+          "nombre": "Bed and breakfast 2",
+          "numeroEstrella": 4,
+          "descripción": "Este es el hotel 2",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg2"
+        },
+        {
+          "id": 3,
+          "nombre": "Bed and breakfast 3",
+          "numeroEstrella": 4,
+          "descripción": "Este es el hotel 3",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg3"
+        },
+        {
+          "id": 4,
+          "nombre": "Bed and breakfast 4",
+          "numeroEstrella": 4,
+          "descripción": "Este es el hotel 4",
+          "ubicación": "lat 11111 longitud 1111",
+          "imgUrl": "urlimg4"
+        }
+      ]
     }
   ]
 }

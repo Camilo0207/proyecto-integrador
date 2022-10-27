@@ -7,26 +7,57 @@ import instagramImg from "../assets/img/instagram-dark.png"
 
 
 
-export default function DropdownMenu({handleClick}) {
-    
+
+export default function DropdownMenu({handleLogout,location,user,handleClick}) {
+
   return (
     <>
         <div className={styles.head_menu}>
             <div className={styles.icon_close}>
                 <p onClick={handleClick} data-type="close">X</p>
             </div>
+            
             <div className={styles.user_info}>
-                <div className={styles.initials_name}>
-                    <p>BR</p>
-                </div>
-                <p>Hola,</p>
-                <p>Bruno rodriguez</p>
+            {!user
+                ?(
+                    <p className={styles.message_menu}>MENU</p>
+                ):(
+                    <>
+                        <div className={styles.initials_name}>
+                            <p>{`${user.name.slice(0,1).toUpperCase()}${user.lastname.slice(0,1).toUpperCase()}`}</p>
+                        </div>
+                        <p className={styles.message_menu}>Hola,</p>
+                        <p className={styles.user_name}>{`${user.name} ${user.lastname}`}</p>
+                    </>
+                )}
             </div>
         </div>
+
         <div className={styles.main_menu}>
-            <p>Iniciar sesion</p>
-            <p>¿Deseas cerrar sesion?</p>
+            {!user && location.pathname === "/" &&
+                <div className={styles.options_no_login}>
+                    <p className={styles.new_account_message} data-type="close" id={"createAccount"} onClick={handleClick}>Crear Cuenta</p>
+                    <p data-type="close" id={"login"} onClick={handleClick}>Iniciar sesion</p>
+                </div>
+            }
+            
+            {!user && location.pathname === "/login" &&
+                    <p data-type="close" id={"createAccount"} onClick={handleClick}>Crear Cuenta</p>
+            }
+
+            {!user && location.pathname === "/newAccount" &&
+                    <p data-type="close" id={"login"} onClick={handleClick}>Iniciar sesion</p>
+
+            }
+
+            {user &&
+                <div className={styles.close_session}>
+                    <p>¿Deseas <span onClick={handleLogout} data-type="close">cerrar sesión</span>?</p>
+                </div>
+            }
+            
         </div>
+
         <div className={styles.footer_menu}>
             <div>
                 <img src={facebookImg} alt="facebookImg" />

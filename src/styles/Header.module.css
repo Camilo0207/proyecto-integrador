@@ -20,13 +20,15 @@
 
 .principal_logo{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .principal_logo p{
     display: none;
     color: var(--third-color);
     margin-left: 12px;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .principal_logo p img{
@@ -66,6 +68,50 @@
     z-index: 999;
 }
 
+.info_user .close{
+    text-align: end;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--second-color);
+    cursor: pointer;
+}
+
+.info_user .initials_name{
+    display: flex;
+    align-items: center;
+}
+
+.info_user .logo{
+    background: var(--second-color);
+    color: var(--fourth-color);
+    font-size: 20px;
+    border-radius: 50%;
+    font-weight: 700;
+    padding: 5px;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.info_user .initials_name .prhase_name_box .user_name{
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.info_user .initials_name .prhase_name_box .prhase_hello{
+    color: gray;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+
 
 
 @media(min-width:481px){
@@ -74,6 +120,7 @@
     }
     .principal_menu button{
         display: initial;
+        padding: 10px 35px;
     }
     .principal_menu  img{
         display: none;
@@ -89,6 +136,9 @@
     }
     .principal_logo p{
         display: initial;
+    }
+    .principal_menu button{
+        padding: 10px 54px;
     }
 }
 

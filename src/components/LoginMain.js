@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { helpValidaciones } from '../helpers/helpValidaciones'
 import { useApi } from '../hooks/useApi'
+import { useLocalStorage } from '../hooks/useLocalStorage'
 import styles from "../styles/LoginMain.module.css"
 import LoginForm from './LoginForm'
 
@@ -16,7 +17,10 @@ export default function LoginMain() {
   const navigate = useNavigate();
   const [errors, setErrors] = useState({})
   const {validateFormLogin}=helpValidaciones()
-  const {db}=useApi("http://localhost:5000/usersCreated")
+  const url="http://localhost:5000/usersCreated"
+  const {db}=useApi(url)
+  const {setLocalStorage}=useLocalStorage("userName")
+
 
   const handleChange=(e)=>{
       setForm({
@@ -29,16 +33,16 @@ export default function LoginMain() {
   const handleSubmit=(e)=>{
     e.preventDefault();
     const newErrors = validateFormLogin(form, db);
-    setErrors(newErrors);
+    const {errorsValidation,userFound}=newErrors;
+    setErrors(errorsValidation);
 
-    if (Object.keys(newErrors).length === 0) {
+    if (Object.keys(errorsValidation).length === 0) {
+      setLocalStorage({name:userFound.name,lastname:userFound.lastname})
       navigate("/");
     } else {
       return;
     }
   }
-
-  console.log(form);
 
   return (
     <div className={styles.container}>

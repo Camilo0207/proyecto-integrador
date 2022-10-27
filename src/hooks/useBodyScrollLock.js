@@ -7,13 +7,14 @@ const useBodyScrollLock=()=>{
     const [isLocked, setIsLocked] = useState(
         bodyStyle.overflow === "hidden"
     )
+
     useEffect(() => {
         bodyStyle.overflow = isLocked ? "hidden" : "auto"
     }, [isLocked, bodyStyle])
     
-    
-    const toggle=()=>setIsLocked(!isLocked)
-    return [toggle]
+    const open=()=>setIsLocked(true)
+    const close=()=>setIsLocked(false)
+    return [open,close]
 }
 
 export default useBodyScrollLock;

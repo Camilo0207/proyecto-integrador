@@ -2,9 +2,10 @@ import React from 'react'
 import "../styles/Calendar.css"
 import { DateRangePicker } from 'rsuite';
 import "rsuite/dist/rsuite-rtl.css"
+import { useResizeScroll } from '../hooks/useResizeScroll';
 
 export default function Calendar({form,setForm}) {
-
+const {width} =useResizeScroll()
 
     const handleChange=(value)=>{
       if(value){
@@ -21,12 +22,11 @@ export default function Calendar({form,setForm}) {
         })
       }
     }
-    
     return (
     <div>
         <DateRangePicker 
           onChange={handleChange} 
-          showOneCalendar 
+          showOneCalendar={width > 890 ? false:true}
           block 
           format="yyyy-MM-dd" 
           defaultCalendarValue={[new Date('2022-02-01'), new Date('2022-03-01')]}

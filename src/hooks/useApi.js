@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 
 export const useApi = (url) => {
   const [db, setDb] = useState(null);
@@ -8,10 +7,11 @@ export const useApi = (url) => {
 
   useEffect(() => {
     setLoading(true);
-    const getInfoAxios = async () => {
+    const getInfoDb = async () => {
       try {
-        const res = await axios.get(url);
-        setDb(res.data);
+        const res = await fetch(url);
+        const data= await res.json()
+        setDb(data);
         setError(null);
       } catch (error) {
         setError(error.message);
@@ -20,18 +20,29 @@ export const useApi = (url) => {
       }
     };
     if (url) {
-      getInfoAxios();
+      getInfoDb();
     } else {
       setDb(null);
     }
   }, [url]);
 
+
+
   const createData = async (data) => {
     data.id = Date.now();
+    const dataStringify =JSON.stringify(data)
+
+    const options={
+      method : "POST",
+      body: dataStringify,
+      headers: { "content-type": "application/json" },
+    }
+
     try {
-      const res = await axios.post(url, data);
-      if (res.status === 201) {
-        setDb([...db, res.data]);
+      const res = await fetch(url,options)
+      const newData= await res.json()
+      if (res.ok) {
+        setDb([...db, newData]);
         setError(null);
       }
     } catch (error) {
@@ -39,12 +50,20 @@ export const useApi = (url) => {
     }
   };
 
+
+
   const deleteData = async (id) => {
+    let endpoint = `${url}/${id}`;
+
+    const options={
+      method : "DELETE",
+      headers: { "content-type": "application/json" },
+    }
+
     try {
-      const res = await axios.delete(`${url}/${id}`, id);
-      if (res.status === 200) {
-        let newData = db.filter((el) => el.id !== id);
-        console.log(newData);
+      const res = await fetch(endpoint,options)
+      if (res.ok) {
+        let newData = db.filter((el) => el.id !== id)
         setDb(newData);
         setError(null);
       }
@@ -53,11 +72,19 @@ export const useApi = (url) => {
     }
   };
 
+
   const updateData = async (data) => {
     let endpoint = `${url}/${data.id}`;
+    const dataStringify =JSON.stringify(data)
+
+    const options={
+      method : "PUT",
+      body: dataStringify,
+      headers: { "content-type": "application/json" },
+    }
     try {
-      const result = await axios.put(endpoint, data);
-      if (result.status === 200) {
+      const res = await fetch(endpoint,options)
+      if (res.ok) {
         let newData = db.map((el) => (el.id === data.id ? data : el));
         setDb(newData);
         setError(null);

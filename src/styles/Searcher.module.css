@@ -32,7 +32,77 @@
   /* background: #000; */
 }
 
-.container form select,input {
+.options_destiny{
+  background: var(--third-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.options_destiny .info_destiny{
+  background: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  padding: 7px 7px 7px 10px ;
+  display: flex;
+  align-items: center;
+}
+.options_destiny .info_destiny img{
+  margin-right: 10px;
+}
+
+
+.options_destiny ul{
+  position: absolute;
+  width: 100%;
+  top: 42px;
+  left: 0px;
+  z-index: 999;
+  padding: 10px;
+  background: #ffffff;
+}
+
+.options_destiny ul li{
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.options_destiny ul li:hover{
+  background: var(--main-color);
+}
+.options_destiny ul li img{ 
+  width: 18px;
+  height: 26px;
+  margin-right: 20px;
+}
+
+.options_destiny ul li div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 0;
+  width: 100%;
+}
+
+.options_destiny ul li div p{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.options_destiny ul li div .state_name{
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+}
+.options_destiny ul li div .country_name{
+  color: var(--third-color);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.container form input {
   width: 100%;
   padding: 8px;
   font-size: 14px;
@@ -40,9 +110,7 @@
   border: none;
 }
 
-.container form select option{
-  /* background: yellow; */
-}
+
 
 .container form .calendar {
   font-size: 14px;
@@ -68,7 +136,13 @@
   font-size: 15px;
 }
 
-
+.container form select,input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+}
 
 
 @media (min-width: 340px) {
@@ -99,7 +173,9 @@
     flex-direction: row;
     justify-content: space-between;
   }
-
+  .options_destiny .info_destiny{
+    padding: 5px 6px 5px 10px;
+  }
   .container form .calendar,.options_destiny {
     width: 36%;
     margin: 0;

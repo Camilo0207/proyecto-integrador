@@ -17,9 +17,12 @@
 .container .newAccount_box h1{
     color: var(--main-color);
     font-size: 24px;
+    height: fit-content;
     /* margin-bottom: 47px; */
 }
-
+.container .newAccount_box p{
+    font-size: 12px;
+}
 
 
 
@@ -27,13 +30,13 @@
     .container .newAccount_box{
     width: 50%;
     }
-    /* .container .login_box h1{
+    .container .newAccount_box h1{
     font-size: 28px;
-    } */
+    }
 }
 
 @media(min-width:769px) {
     .container .newAccount_box{
-        width: 35%;
+        width: 45%;
     }
 }
